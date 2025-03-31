@@ -1,0 +1,514 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+.contact-bar {
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .contact-bar a {
+    text-decoration: none;
+    color: #16325B;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .contact-bar a:hover {
+    color: #FFAD60;
+  }
+  .chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    background-color: #FFAD60;
+    color: white;
+    border: 2px solid #16325B;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 28px;
+    transition: background-color 0.5s ease;
+  }
+  
+  .chatbot-button:hover {
+    background-color: #16325B;;
+  }
+.header{
+    height: 100vh;
+    width: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1), rgba(0,0,0,0.5)),
+    url('images/programmng-language.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width: 576px){
+    nav, .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+nav .nav-links {
+    list-style-type: none;
+    display: flex;                
+    margin-right: 50px;
+    margin-top: 20px;
+}
+nav .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+}
+nav .nav-links li a:hover { 
+    box-shadow: 2px 2px 2px 2px rgba(255,255,255, 0.2);
+    transition: box-shadow 0.3s ease;    
+    border-radius: 20px;    
+}
+.logo{
+    width: 120px;
+    height: 120px;
+    background-image: url('images/logo.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.welcome{
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+    margin-top: 230px;
+    margin-left: 335px;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.1)
+}
+.head1 h1{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 60px;
+    font-weight: 500;
+    color: #16325B;
+}
+.head1 p{
+    text-align: center;
+    color: #227B94;
+    margin: 20px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+.content1{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+.content1 .box{
+    width: 280px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+#box1 .icon{
+    height: 80px;
+    width: 80px;
+    background: url(images/education.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+#box2 .icon{
+    height: 80px;
+    width: 80px;
+    background: url(images/teacher.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+#box3 .icon{
+    height: 80px;
+    width: 80px;
+    background: url(images/experience.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+#box4 .icon{
+    height: 80px;
+    width: 80px;
+    background: url(images/expertise.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.box .num{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(145, 6, 6);
+    margin-top: 30px;
+}
+.box .h{
+    font-weight: 500;
+    color: #16325bef;
+    text-align: center;
+    margin-top: 20px;
+}
+.box .c{
+    color: #227B94;
+    text-align: center;
+    margin-top: 20px;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 100px;
+    margin-left: 10px;
+}
+.about .head2{
+    height: 500px;
+    width: 43%;
+    background-image: url('images/Institute.webp');
+    background-size: cover;
+}
+.about-us{
+    height: 500px;
+    width: 43%;
+    padding: 30px;
+}
+.about-us h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #16325B;
+    margin-bottom: 20px;
+}
+.about-us ul{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    list-style-type: none;
+}
+.about-us p{
+    font-size: 18px;
+    color: #229799;
+    letter-spacing: 0.5px;
+    word-spacing: 0.5px;
+    text-align: justify;
+}
+.about-us ul li::before{
+    content: "\2713"; /* Checkmark */
+    color: rgb(145, 6, 6);
+    font-size: 18px;
+    font-weight: 300;
+    margin-right: 8px; 
+}
+.about-us ul li{
+    color: #16325bef;
+    letter-spacing: 0.5px;
+    word-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+.courses h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #16325B;
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.courses-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.courses-row{
+    display: flex;
+    justify-content: center;
+    gap: 98px;
+    
+}
+.course{
+    width: 25%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px darkgrey;
+}
+.course .title{
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    padding: 10px;
+    background: radial-gradient(circle,#229799,#16325B);
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+}
+.course .info p{
+    font-size: 18px;
+    color: #229799;
+    letter-spacing: 0.5px;
+    word-spacing: 0.5px;
+    text-align: justify;
+    padding: 10px;
+    height: 180px;
+}
+.course .info button{
+    font-size: 18px;
+    color: #fff;
+    background: radial-gradient(circle,#229799,#16325B);
+    margin-left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    border-radius: 0 0 20px 20px;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+}
+.course .info button:hover{
+    background: #FFAD60;
+    color: #16325B;
+    transition: background 0.5s ease;
+}
+.faculties h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #16325B;
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faculty-content{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.faculty{
+    box-shadow: 2px 2px 2px 2px darkgrey;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #41B3A2;
+    border-radius: 20px;
+    padding: 16px;
+    gap: 16px;
+}
+.faculty .pic{
+    height: 120px;
+    width: 120px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+}
+.faculty #pic1{
+    background: url(images/faculty1.webp);
+    background-size: cover;
+    background-position: center;
+}
+.faculty #pic2{
+    background: url(images/faculty2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.faculty #pic3{
+    background: url(images/faculty3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.faculty #pic4{
+    background: url(images/faculty4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.faculty .info ul li{
+    list-style-type: none;
+    margin: 10px;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 0.5px;
+    word-spacing: 0.5px;
+}
+.faculty .info ul li:last-child{
+    color: #FFAD60;
+}
+.placement-partners h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #16325B;
+    margin-top: 80px;
+    margin-left: 78px;
+    margin-bottom: 30px;
+}
+
+.partners-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+.partners-content .partners-row{
+    display: flex;
+    justify-content: center;
+    gap: 33px;
+}
+.partner{
+    height: 100px;
+    width: 170px;
+    border-radius: 10px;
+    box-shadow: 2px 2px darkgrey;
+}
+.inqury{
+    background: linear-gradient(#16325B, #41B3A2);
+    width: 88%;
+    height: 600px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-left: 85px;
+    position: relative;
+    border-radius: 30px;
+}
+.iner-box{
+    width: 1000px;
+    height: 70%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    gap: 80px;
+}
+.iner-box h2{
+    position: absolute;
+    top: 25px;
+    color: white;
+    font-size: 40px;
+}
+.iner-box .contact-img{
+    height: 400px;
+    width: 400px;
+    background-image: url(images/contact.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.iner-box form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+.iner-box .in{
+    height: 50px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px darkgray;
+}
+.iner-box .in::placeholder{
+    font-size: 18px;
+    color: #41B3A2;
+}
+.iner-box .button{
+    height: 50px;
+    background-color: #16325B;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+.iner-box .button:hover{
+    background-color: #FFAD60;
+    transition: background 0.5s ease;
+    box-shadow: 2px 2px darkgray;
+    color: #16325B;
+}
+footer{
+    margin-top: 80px;
+    background-color: #16325B;
+}
+.footer-content{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 20px;
+}
+.footer-content h2{
+    color: #41B3A2;
+}
+.footer-content ul{
+    width: 280px;
+    list-style-type: none;
+    padding: 5px 10px;
+}
+.footer-content a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    word-spacing: 0.5px;
+}
+.footer-content li:hover{
+    padding-left: 3px ;
+    transition: 0.5s;
+}
+.footer p{
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+}
+.social-media h2{
+    margin-bottom: 20px;
+}
+
+.social-media a{
+    font-size: 30px;
+    color: white;
+    transition: color 0.5s ease;
+}
+
+.social-media a:hover{
+    color: #FFAD60;
+}
+
+@media screen and (max-width: 576px){
+    .content1, .about, .courses-row, .faculty-content, .partners-content .partners-row, .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
